@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-08-2024 a las 02:51:17
+-- Tiempo de generación: 15-08-2024 a las 05:59:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -72,6 +72,14 @@ CREATE TABLE `publicaciones` (
   `estado` enum('pendiente','aprobada','rechazada') DEFAULT 'pendiente'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `publicaciones`
+--
+
+INSERT INTO `publicaciones` (`id_publicacion`, `id_user`, `titulo`, `descripcion`, `imagen`, `fecha_publicacion`, `estado`) VALUES
+(19, 7, 'Gato de 3 meses busca hogar', 'Adopta a Max, un elegante gato blanco de 3 meses. Es cariñoso y juguetón. Si estás interesado, llama al 555-123-4567.', '/uploads/1723208545592.jpg', '2024-08-09 13:02:25', 'aprobada'),
+(20, 7, 'Husky en adopcion', 'Comunicate a este correo: sdsdhs', '/uploads/1723563074178.jpg', '2024-08-13 15:31:14', 'aprobada');
+
 -- --------------------------------------------------------
 
 --
@@ -86,6 +94,14 @@ CREATE TABLE `revision_publicaciones` (
   `fecha_revision` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `revision_publicaciones`
+--
+
+INSERT INTO `revision_publicaciones` (`id_revision`, `id_publicacion`, `id_admin`, `estado`, `fecha_revision`) VALUES
+(8, 19, 1, 'aprobada', '2024-08-09 13:02:54'),
+(9, 20, 1, 'aprobada', '2024-08-13 15:32:41');
+
 -- --------------------------------------------------------
 
 --
@@ -99,6 +115,13 @@ CREATE TABLE `usuarios` (
   `correo` varchar(100) NOT NULL,
   `contraseña` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_user`, `nombre`, `apellido`, `correo`, `contraseña`) VALUES
+(7, 'Armando', 'González', 'armando@gmail.com', '12345');
 
 --
 -- Índices para tablas volcadas
@@ -161,19 +184,19 @@ ALTER TABLE `auditoria_usuarios`
 -- AUTO_INCREMENT de la tabla `publicaciones`
 --
 ALTER TABLE `publicaciones`
-  MODIFY `id_publicacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_publicacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `revision_publicaciones`
 --
 ALTER TABLE `revision_publicaciones`
-  MODIFY `id_revision` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_revision` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restricciones para tablas volcadas

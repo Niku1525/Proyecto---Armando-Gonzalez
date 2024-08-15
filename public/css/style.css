@@ -1,0 +1,121 @@
+
+.navbar-brand.nbb-custom {
+    margin-left: 0.3rem;
+    font-size: 1.8rem;
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+}
+
+.navbar-brand.nbb-custom:hover {
+    color: yellow;
+}
+
+.btn-cst {
+    width: 155px;
+    font-family: comic sans MS, cursive !important;
+    font-size: large !important;
+}
+
+.navbar-nav.nb-cst {
+    font-size: large;
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+}
+
+.nav-link:hover {
+    color: yellow !important;
+    
+}
+.hero {
+    height: calc(80vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000; 
+    text-align: center;
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.40rem;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+.forum {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;    
+    font-family: comic sans MS, cursive !important;
+}
+
+.forum form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);   
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+    border: solid 1px black;
+}
+.forum h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+}
+.forum form .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+}
+#footer-cst {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: comic sans MS, cursive !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+.navbar .dropdown-menu {
+    right: 0; 
+    left: auto;
+}
+
+.navbar .dropdown-menu a.dropdown-item {
+    white-space: nowrap; 
+}
+
+.post img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    object-fit: cover; 
+    border: 1px solid black;
+    border-radius: 4px;
+}
+h3{
+    font-weight: bold !important;   
+    font-family: comic sans MS, cursive !important;
+}
+#title-admin{
+    font-weight: bold !important;
+    font-size: 3.5rem;
+    font-family: comic sans MS, cursive !important;
+}

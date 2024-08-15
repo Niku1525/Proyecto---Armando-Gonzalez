@@ -1,0 +1,57 @@
+.chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+}
+.message {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.user-message {
+    text-align: right;
+}
+.bot-message {
+    text-align: left;
+    font-weight: bold;
+}
+.option-button {
+    margin: 5px;
+}
+
+.navbar-brand.nbb-custom {
+    margin-left: 0.3rem;
+    font-size: 1.8rem;
+    font-family: comic sans MS, cursive !important;
+    font-weight: bold !important;
+}
+
+.navbar-brand.nbb-custom:hover {
+    color: yellow;
+}
+
+.btn-cst {
+    width: 155px;
+    font-family: comic sans MS, cursive !important;
+    font-size: large !important;
+}
+
+.navbar-nav.nb-cst {
+    font-family: comic sans MS, cursive;
+    font-size: large;
+}
+
+body{
+    background-image: url(../img/miau3.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.option-button:hover{
+    background-color: yellow !important; 
+    color: black !important; 
+    border-color: black !important; 
+}
